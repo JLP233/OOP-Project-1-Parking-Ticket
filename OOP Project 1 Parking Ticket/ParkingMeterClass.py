@@ -17,4 +17,4 @@ class ParkingMeterClass:
         self._minutes_purchased = minutes
 
     def __str__(self) -> str:
-        return f"Meter purchased: {self.minutes_purchased} min"
+        return f"Time purchased: {self.minutes_purchased} min"
