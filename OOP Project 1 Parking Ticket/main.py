@@ -44,7 +44,7 @@ def scenario_4():
         title = f"Lot Car {idx}: {car}"
         run_and_print(car, meter, officer, title)
 
-if __name__ == "main":
+if __name__ == "__main__":
     scenario_1()
     scenario_2()
     scenario_3()
