@@ -10,7 +10,7 @@ def __init__(self, make: str, model: str, color: str, license_number: str, minut
 
 @property
 def minutes_parked(self) -> int:
-        return self._minutes_parked
+    return self._minutes_parked
 
 @minutes_parked.setter
 def minutes_parked(self, minutes: int) -> None:
@@ -19,3 +19,6 @@ def minutes_parked(self, minutes: int) -> None:
         if minutes <= 0:
             raise ValueError("minutes_parked cannot be less than 0")
         self._minutes_parked = minutes
+
+def __str__(self) -> str:
+    return f"{self.color} {self.make} {self.model} ({self.license_number}), parked {self.minutes_parked} min"
