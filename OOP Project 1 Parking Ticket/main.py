@@ -18,3 +18,10 @@ def scenario_1():
     meter = ParkingMeterClass(minutes_purchased=40)
     officer = PoliceOfficerClass("John Doe", "5678")
     run_and_print(car, meter, officer, "Scenario 1: Car Parked Legally")
+
+def scenario_2():
+    car = ParkedCarClass("Honda", "Accord", "Blue", "ABC987", minutes_parked=70)
+    meter = ParkingMeterClass(minutes_purchased=60)
+    officer = PoliceOfficerClass("Jane Smith", "1234")
+    run_and_print(car, meter, officer, "Scenario 2: Car Illegally Parked Past Alotted Time")
+
