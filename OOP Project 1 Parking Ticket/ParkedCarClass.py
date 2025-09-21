@@ -8,3 +8,14 @@ def __init__(self, make: str, model: str, color: str, license_number: str, minut
     self.license_number = license_number
     self.minutes_parked = minutes_parked
 
+@property
+def minutes_parked(self) -> int:
+        return self._minutes_parked
+
+@minutes_parked.setter
+def minutes_parked(self, minutes: int) -> None:
+        if not isinstance(minutes, int):
+            raise TypeError("minutes_parked must be a whole number")
+        if minutes <= 0:
+            raise ValueError("minutes_parked cannot be less than 0")
+        self._minutes_parked = minutes
