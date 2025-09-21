@@ -22,11 +22,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="main.py" />
-    <Compile Include="ParkedCar Class.py" />
-    <Compile Include="ParkingMeter Class.py" />
+    <Compile Include="ParkedCarClass.py" />
     <Compile Include="ParkingMeterClass.py" />
-    <Compile Include="ParkingTicket Class.py" />
-    <Compile Include="PoliceOfficer Class.py" />
+    <Compile Include="ParkingTicketClass.py" />
+    <Compile Include="PoliceOfficerClass.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
