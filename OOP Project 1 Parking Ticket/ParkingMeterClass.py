@@ -1,2 +1,2 @@
 class ParkingMeterClass:
-    "Parking Meter."
+    "Purhcased time from parking Meter."
