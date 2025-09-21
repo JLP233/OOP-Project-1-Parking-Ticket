@@ -20,3 +20,12 @@ def calculate_fine(self) -> float:
         return 0.0
     return 25.0 + 10.0 * (hours - 1)
 
+def __str__(self) -> str:
+        lines = [
+            "Parking Ticket",
+            f"Car: {self.car.color} {self.car.make} {self.car.model} ({self.car.license_number})",
+            f"Illegally parked in excess of alotted time by: {self.overtime_minutes} minute(s)",
+            f"Fine: ${self.fine:.2f}",
+            f"Issuing Officer: {self.officer_name} (Badge {self.badge_number})",
+        ]
+        return "\n".join(lines)
