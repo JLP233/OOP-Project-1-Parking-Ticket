@@ -30,3 +30,22 @@ def scenario_3():
     meter = ParkingMeterClass(minutes_purchased=60)
     officer = PoliceOfficerClass("James Brown", "4321")
     run_and_print(car, meter, officer, "Scenario 3: Car Illegally Parked Past Alotted Time by 130 Minutes")
+
+def scenario_4():
+    print("\n Scenario 4: Multiple Cars in a Parking Lot")
+    officer = PoliceOfficerClass("Sarah Green", "9999")
+    cars_and_meters = [
+        (ParkedCarClass("Nissan", "Altima", "White", "JKL321", 60),  ParkingMeterClass(60)),
+        (ParkedCarClass("Chevy", "Malibu", "Silver", "QWE789", 80),   ParkingMeterClass(60)),
+        (ParkedCarClass("BMW", "X5", "Black", "BMW999", 500),         ParkingMeterClass(60)),
+        (ParkedCarClass("Mazda", "3", "Blue", "MAZ321", 45),          ParkingMeterClass(60)),
+    ]
+    for idx, (car, meter) in enumerate(cars_and_meters, start=1):
+        title = f"Lot Car {idx}: {car}"
+        run_and_print(car, meter, officer, title)
+
+if __name__ == "main":
+    scenario_1()
+    scenario_2()
+    scenario_3()
+    scenario_4()
