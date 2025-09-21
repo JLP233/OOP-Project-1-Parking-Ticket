@@ -1,3 +1,10 @@
+import os, sys, inspect, ParkedCarClass  # <-- the MODULE, not the class
+
+print("CWD        :", os.getcwd())
+print("USING FILE :", ParkedCarClass.__file__)
+print("INIT SIG   :", inspect.signature(ParkedCarClass.ParkedCarClass.__init__))
+print()
+
 from ParkedCarClass import ParkedCarClass
 from ParkingMeterClass import ParkingMeterClass
 from PoliceOfficerClass import PoliceOfficerClass
