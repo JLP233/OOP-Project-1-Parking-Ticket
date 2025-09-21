@@ -12,3 +12,9 @@ def run_and_print(car, meter, officer, title: str):
         print("Result: Ticket Issued \n" + str(ticket))
     else:
         print("Result: Ticket not issued / Car parked legally.")
+
+def scenario_1():
+    car = ParkedCarClass("Toyota", "Camry", "Red", "XYZ123", minutes_parked=30)
+    meter = ParkingMeterClass(minutes_purchased=40)
+    officer = PoliceOfficerClass("John Doe", "5678")
+    run_and_print(car, meter, officer, "Scenario 1: Car Parked Legally")
