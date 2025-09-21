@@ -7,3 +7,4 @@ def __init__(self, name: str, badge_number: str):
 
 def __str__(self) -> str:
     return f"Officer {self.name} (Badge {self.badge_number})"
+
