@@ -24,6 +24,7 @@
     <Compile Include="main.py" />
     <Compile Include="ParkedCar Class.py" />
     <Compile Include="ParkingMeter Class.py" />
+    <Compile Include="ParkingMeterClass.py" />
     <Compile Include="ParkingTicket Class.py" />
     <Compile Include="PoliceOfficer Class.py" />
   </ItemGroup>
